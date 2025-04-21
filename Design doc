@@ -1,0 +1,78 @@
+
+Pygame design doc 
+
+1 Goal
+
+    Learn how to use pygame (we just learned it in class)
+
+    Practice loops and if statments
+
+    Work with events and real time input
+
+    Try to make a fun working game that ends when u lose
+
+2 How It Works
+
+    Snake moves with the arrow keys
+
+    Food shows up in a random spot
+
+    When snake hits food, it grows
+
+    If you hit the wall or yourself its game over
+
+    Score goes up by 1 for each food
+
+3 Game Parts
+
+    Snake: made of blocks that follow each other (a list of coords)
+
+    Food: red square that shows in random place
+
+    Screen: the game window, 600 x 400 size
+
+    Score: text in corner shows how many food eaten
+
+4 Controls
+
+    UP arrow – go up
+
+    DOWN – go down
+
+    LEFT – go left
+
+    RIGHT – go right
+
+    ESC – quit the game
+
+5 Game Loop
+
+    Set up everything (snake, food, screen)
+
+    Start loop:
+
+        check key presses
+
+        move the snake
+
+        check if it ate food
+
+        check if it hit wall or body
+
+        draw all stuff on screen
+
+        wait a bit (control speed)
+
+    End if crash, show game over message
+
+6 Functions (planed)
+
+    gameLoop – runs the whole game
+
+    draw_snake – shows the snake on screen
+
+    message – shows game over or stuff
+
+    your_score – shows score on the top
+
+    random_food – make food in random spot
